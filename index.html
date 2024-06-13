@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Balwin Sport</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="top-header-section">
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com" target="_blank"><img src="images/icon-balwin-facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><img src="images/icon-balwin-instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="https://www.tiktok.com" target="_blank"><img src="images/icon-balwin-tiktok.svg" alt="Tiktok"></a></li>
+                    <li><a href="https://www.pinterest.com" target="_blank"><img src="images/icon-balwin-pinterest.svg" alt="Pinterest"></a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank"><img src="images/icon-balwin-linkedin.svg" alt="Linkedin"></a></li>
+                    <li><a href="https://www.youtube.com" target="_blank"><img src="images/icon-balwin-youtube.svg" alt="Youtube"></a></li>
+                </ul>
+            </div>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="http://127.0.0.1:5500/index.html">
+                        <img src="images/balwin-logo.svg" alt="Logo"></a>
+                </div>
+                <div class="main-menu">
+                    <ul class="nav-links">
+                        <input type="checkbox" id="checkbox-toggle">
+                        <label for="checkbox-toggle" class="hamburger">&#9776;</label>
+                        <div class="menu">
+                            <li><a href="https://home.example">HOME</a></li>
+                            <li><a href="https://about.example">ABOUT</a></li>
+                            <li><a href="https://events.example">EVENTS</a></li>
+                            <li><a href="https://liveleader.example">LIVE LEADER BOARD</a></li>
+                            <li><a href="https://news.example">NEWS</a></li>
+                            <li><a href="https://club.example">CLUB</a></li>
+                        </div>  
+                    </ul>
+                </div>
+            </div>
+        </div>        
+</header>
+
+<!-- SEARCH SECTION -->
+<section class="search">
+    <div class="conatiner">
+        <div class="search-bar">
+            <div class="text-input">
+                <img src="images/icon-balwing-search1.svg" alt="">
+                <input type="search" placeholder="Search Properties, Area etc" size="50" class="search-input" />
+            </div>
+            <div class="search-button">
+               <a href="#"><img src="images/icon-balwin-search.svg" alt=""></a> 
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Flickity Slideshow -->
+<section class="flick-slideshow">
+    <div class="container">
+        <!-- Desktop and Tablet Slideshow -->
+        <div class="carousel desktop-tablet" data-flickity='{ "fullscreen": true, "lazyLoad": 1, "autoPlay": 3000, "wrapAround": true }'>
+            <div class="carousel-cell">
+                <img src="images/banner-11.png" class="carousel-cell-image" alt="">
+                <div class="timer">
+                    <div class="row values">
+                        <div class="days">00</div><div class="semi-colon">:</div>
+                        <div class="hours">00</div><div class="semi-colon">:</div>
+                        <div class="minutes">00</div><div class="semi-colon">:</div>
+                        <div class="seconds">00</div>
+                    </div>
+                    <div class="row">
+                        <div class="title">Days</div>
+                        <div class="title">Hrs</div>
+                        <div class="title">Mins</div>
+                        <div class="title">Sec</div>
+                    </div>
+                    <div class="subtitle">Till launch</div>
+                </div> 
+            </div> 
+            <div class="carousel-cell">
+                <img src="images/banner-image-12.jpg" class="carousel-cell-image" alt="">
+                <div class="timer">
+                    <div class="row values">
+                        <div class="days">00</div><div class="semi-colon">:</div>
+                        <div class="hours">00</div><div class="semi-colon">:</div>
+                        <div class="minutes">00</div><div class="semi-colon">:</div>
+                        <div class="seconds">00</div>
+                    </div>
+                    <div class="row">
+                        <div class="title">Days</div>
+                        <div class="title">Hrs</div>
+                        <div class="title">Mins</div>
+                        <div class="title">Sec</div>
+                    </div>
+                    <div class="subtitle">Till launch</div>
+                </div> 
+            </div>
+            <!-- Add more carousel cells here -->
+        </div>
+
+        <!-- Mobile Slideshow (Hidden by Default) -->
+        <div class="carousel mobile" data-flickity='{ "fullscreen": true, "lazyLoad": 1, "autoPlay": 3000, "wrapAround": true }'>
+            <div class="carousel-cell">
+                <img src="images/mobile-banner-1.jpg" class="carousel-cell-image" alt="">
+                <div class="timer">
+                    <div class="row values">
+                        <div class="days">00</div><div class="semi-colon">:</div>
+                        <div class="hours">00</div><div class="semi-colon">:</div>
+                        <div class="minutes">00</div><div class="semi-colon">:</div>
+                        <div class="seconds">00</div>
+                    </div>
+                    <div class="row">
+                        <div class="title">Days</div>
+                        <div class="title">Hrs</div>
+                        <div class="title">Mins</div>
+                        <div class="title">Sec</div>
+                    </div>
+                    <div class="subtitle">Till launch</div>
+                </div> 
+            </div> 
+            <div class="carousel-cell">
+                <img src="images/mobile-banner-2.jpg" class="carousel-cell-image" alt="">
+                <div class="timer">
+                    <div class="row values">
+                        <div class="days">00</div><div class="semi-colon">:</div>
+                        <div class="hours">00</div><div class="semi-colon">:</div>
+                        <div class="minutes">00</div><div class="semi-colon">:</div>
+                        <div class="seconds">00</div>
+                    </div>
+                    <div class="row">
+                        <div class="title">Days</div>
+                        <div class="title">Hrs</div>
+                        <div class="title">Mins</div>
+                        <div class="title">Sec</div>
+                    </div>
+                    <div class="subtitle">Till launch</div>
+                </div> 
+            </div>
+            <!-- Add more carousel cells here -->
+        </div>
+    </div>
+</section>
+
+<!--HEADING SECTION-->
+<section class="top-heading">
+    <div class="container">
+        <h2 class="top-heading-title">The Ultimate Athlete</h2>
+        <div class="top-heading-text">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea eveniet a aliquid 
+                debitis pariatur eius architecto accusamus eum ut consequuntur cupiditate tempore,
+                 corrupti placeat velit expedita maxime aspernatur explicabo? Ad. debitis pariatur eius architecto accusamus eum ut consequuntur cupiditate tempore,
+                 corrupti placeat velit expedita maxime aspernatur explicabo? Ad. debitis pariatur eius architecto accusamus eum ut consequuntur cupiditate tempore,
+                 corrupti placeat velit expedita maxime aspernatur explicabo? Ad.
+            </p>
+        </div>
+       
+    </div>
+</section>
+
+<!-- ULTIMATE ATHLETE -->
+<section class="ultimate-athlete">
+    <div class="container">
+        <div class="athlete-row">
+            <div class="col-1-athlete">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h2>The Ultimate Athlete</h2>
+                    </div>
+                    <div class="card-date">
+                        Date: 19 May 2023
+                    </div>
+                    <div class="card-subtitle">
+                        <p>Event is exclusive to Balwin residents only.</p>
+                    </div>
+                    <div class="athlete-image">
+                        <img src="images/gym-3.png" alt="Gym-3">
+                    </div>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur deserunt ad quos sint. Amet itaque totam adipisci corrupti pariatur natus distinctio earum optio, dolorem assumenda quas, fugit voluptates perferendis culpa hic facilis omnis ea? Dolor.  itaque totam adipisci corrupti pariatur natus distinctio earum optio, dolorem assumenda quas, fugit voluptates perferendis culpa hic facilis omnis ea? Dolor natus distinctio earum optio, dolorem assumenda quas, fugit voluptates perferendis culpa hic facilis omnis ea? Dolor.  itaque totam adipisci corrupti pariatur natus distinctio earum optio, dolorem assumenda quas, fugit voluptates perferendis culpa hic facilis omnis ea? Dolor</p>
+                    </div>
+                    <div class="card-button">
+                        <a href="https://we.example.com">Enter Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2-athlete">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h2>Live Leader Board</h2>
+                    </div>
+                    <div class="card-leader-board">
+                        <div class="card-board-row">
+                            <div class="card-board-number">1</div>
+                            <div class="card-board-image">
+                                <img src="images/finance.png" alt="Finance">
+                            </div>
+                            <div class="card-board-title">
+                                <h2>Financial Results</h2>
+                            </div>
+                            <div class="card-board-position">10</div>
+                        </div> 
+                        <div class="card-board-row">
+                            <div class="card-board-number">2</div>
+                            <div class="card-board-image">
+                                <img src="images/annula-reports.png" alt="Reports">
+                            </div>
+                            <div class="card-board-title">
+                                <h2>Annual Reports</h2>
+                            </div>
+                            <div class="card-board-position">8</div>
+                        </div> 
+                        <div class="card-board-row">
+                            <div class="card-board-number">3</div>
+                            <div class="card-board-image">
+                                <img src="images/webcast.png" alt="Webcast">
+                            </div>
+                            <div class="card-board-title">
+                                <h2>View The Webcast</h2>
+                            </div>
+                            <div class="card-board-position">8</div>
+                        </div> 
+                        <div class="card-board-row">
+                            <div class="card-board-number">4</div>
+                            <div class="card-board-image">
+                                <img src="images/reports.png" alt="Reports">
+                            </div>
+                            <div class="card-board-title">
+                                <h2>Other Reports & presentation</h2>
+                            </div>
+                            <div class="card-board-position">6</div>
+                        </div> 
+                        <div class="card-board-row">
+                            <div class="card-board-number">5</div>
+                            <div class="card-board-image">
+                                <img src="images/governance.png" alt="Governance">
+                            </div>
+                            <div class="card-board-title">
+                                <h2>Governance</h2>
+                            </div>
+                            <div class="card-board-position">4</div>
+                        </div> 
+                        <div class="card-board-row">
+                            <div class="card-board-number">6</div>
+                            <div class="card-board-image">
+                                <img src="images/news.png" alt="News">
+                            </div>
+                            <div class="card-board-title">
+                                <h2>News</h2>
+                            </div>
+                            <div class="card-board-position">4</div>
+                        </div> 
+                        <div class="card-board-row">
+                            <div class="card-board-number">7</div>
+                            <div class="card-board-image">
+                                <img src="images/information.png" alt="Information">
+                            </div>
+                            <div class="card-board-title">
+                                <h2>Share Information</h2>
+                            </div>
+                            <div class="card-board-position">3</div>
+                        </div> 
+                        <div class="card-board-row">
+                            <div class="card-board-number">8</div>
+                            <div class="card-board-image">
+                                <img src="images/news.png" alt="Information">
+                            </div>
+                            <div class="card-board-title">
+                                <h2>News Hub</h2>
+                            </div>
+                            <div class="card-board-position">3</div>
+                        </div> 
+                        <div class="card-board-row">
+                            <div class="card-board-number">9</div>
+                            <div class="card-board-image">
+                                <img src="images/share-infor.png" alt="Information">
+                            </div>
+                            <div class="card-board-title">
+                                <h2>Share Information</h2>
+                            </div>
+                            <div class="card-board-position">2</div>
+                        </div> 
+                        <div class="card-board-row">
+                            <div class="card-board-number">10</div>
+                            <div class="card-board-image">
+                                <img src="images/news-hub.png" alt="News Hub">
+                            </div>
+                            <div class="card-board-title">
+                                <h2>News Hub</h2>
+                            </div>
+                            <div class="card-board-position">1</div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GYM BANNER -->
+<section class="gym">
+    <div class="container">
+        <div class="gym-image">
+            <img src="images/gym.png" alt="">
+        </div>
+    </div>
+</section>
+
+<!-- TRAINING SCIENCE GYM -->
+<section class="science-gym">
+    <div class="container">
+        <div class="gym-row">
+            <div class="card-body-1">
+                <div class="gym-card-title">
+                    <h2>Training Science Gym</h2>
+                </div>
+                <div class="gym-card-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laborum excepturi accusamus aliquid id, unde vitae dolor ipsum obcaecati qui corporis reiciendis omnis esse nesciunt praesentium ex temporibus, doloribus fugiat. Corrupti, nam assumenda dolorum earum quasi, accusamus at in debitis illo minima pariatur aspernatur. Praesentium animi amet esse reiciendis sint quidem eos explicabo mollitia. Molestias fugiat sapiente rerum recusandae sit, quasi dignissimos delectus repellendus quo inventore in consectetur dolorem optio, laboriosam ea suscipit provident sed ipsam quas quis labore numquam! Quia dolorum assumenda illum nulla voluptas perferendis beatae minus, iste quod, maiores ea totam repellat et dolores harum repellendus excepturi?
+                    </p>
+                </div>
+            </div>
+            <div class="card-body-2">
+                <div class="gym-card-image">
+                    <img src="images/gym-2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER SECTION -->
+<section class="footer">
+    <div class="container">
+        <div class="explore-icon">
+           <a href=""><img src="images/icon-balwin-explore.svg" alt="Explore"></a> 
+        </div>
+    </div>
+</section>
+
+
+<!-- FLICKITY js -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<!-- TIMER -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function updateTimer() {
+        var now = new Date().getTime();
+        var deadline = new Date("2024-05-22").getTime(); 
+        var timeLeft = deadline - now;
+
+        var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        $(".days").text(days);
+        $(".hours").text(hours);
+        $(".minutes").text(minutes);
+        $(".seconds").text(seconds);
+    }
+
+    $(document).ready(function() {
+        updateTimer();
+        setInterval(updateTimer, 1000);
+    });
+</script> 
+
+
+</body>
+</html>

@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --header-background: #fff;
+    --hero-image-border: #bc0000;
+    --header-menu-items-color: #413d3f;
+    --hover-color: #409444;
+    --search-background: #ebebeb;
+    --heading-color: #000;
+    --text-color: #413d3f;
+    --events-background: #409444;
+    --footer-background: #409444;
+    --card-heading-color: #fff;
+    --card-text-color: #fff;
+    --button-text-color: #409444;
+    --button-background: #fff;
+    --card-bord-title-color: #413d3f;
+    --row-background-color: #ebebeb;
+    --time-values-color: #030304;
+    --clock-title-color: #bc0000;
+    --gym-session-background: #ebebeb;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: 'Quicksand', Times, serif;      
+}
+.container {
+    width: 100%;
+    margin:0 auto ;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+ /* MAIN MENU SECTION */
+header {
+    background-color: var(--header-background);
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    position: relative;
+
+}
+ .menu a {
+    color: var(--heading-text);
+    font-family: 'Quicksand', Times, serif;;
+    font-size: 14px;
+    line-height: 12px;
+    font-style: normal;
+ }
+
+ .menu a:hover {
+    color: var(--hover-color);
+    transition: 0.3s ease-in-out;
+ }
+
+ /* TOGGLE */
+ input[type=checkbox]  {
+    display: none;
+ }
+
+ .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+ }
+
+ /* TOP SOCIAL ICONS */
+ .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    padding: 10px 25px;
+    gap: 20px;
+}
+
+.social-icons a img{
+    transition: 0.5s ease-in-out;
+}
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+ /*SEARCH SEARCH*/
+ .search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 20px 0;
+}
+
+.text-input {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background-color: var(--search-background);
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    img {
+        padding-left: 20px;
+    }
+}
+.search-button img {
+    width: 40px;
+}
+.text-input img {
+    margin-right: 10px; /* Adjust this margin as needed */
+}
+
+input[type='search'] {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+input[type='search']::placeholder {
+    font-size: 14px;
+    text-align: left;
+}
+
+/* FLICKITY SLIDESHOW */
+.carousel-cell {
+    position: relative;
+    width: 100%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 6px solid var(--hero-image-border);
+    border-bottom: 6px solid var(--hero-image-border);
+}
+
+.carousel.is-fullscreen .carousel-cell {
+    height: 100%;
+}
+
+.flickity-page-dots {
+    position: absolute;
+    bottom: 20px;
+}
+
+/* CLOCK TIMER */
+
+.timer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 30px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 5px;
+
+    .title {
+        text-transform: uppercase;
+        color: var(--clock-title-color);
+        font-family: 'Quicksand';
+        font-size: 16px;
+    }
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+    font-size: 24px;
+    color: var(--time-values-color);
+    font-weight: bold;
+    font-family: 'Quicksand';
+}
+.semi-colon {
+    padding-top: 5px;
+    color: #000;
+    font-weight: bold;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #030304;
+    font-family: 'Quicksand';
+    font-size: 16px;
+}
+
+/*TOP HEADING SECTION*/
+
+.top-heading {
+    margin: 28px 0;
+}
+.top-heading-title {
+    font-size: 35px;
+    line-height: 30px;
+    padding-bottom: 30px;
+    color: var(--heading-color);
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Quicksand', Times, serif;
+    text-transform: uppercase;
+    
+}
+
+.top-heading-text p{
+    font-family: 'Quicksand', Times, serif;
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 30px;
+    padding-left: 6%;
+    padding-right: 6%;    
+}
+
+/* ULTIMATE ATHLETE */
+.ultimate-athlete {
+    background-color: var(--events-background);
+    padding-left: 6%;
+    padding-right: 6%;
+}
+.athlete-row {
+    display: grid;
+    padding: 33px 0;
+}
+
+.card-body .card-title h2 {
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--card-heading-color);
+    text-transform: uppercase;
+    font-family: 'Quicksand'; 
+}
+.card-body .card-date {
+    color: #fff;
+    font-size: 20px;
+    line-height: 32px;
+    font-family: 'Quicksand';
+}
+.card-body .card-subtitle p {
+    color: var(--card-text-color);
+    font-size: 20px;
+    line-height: 32px;
+    font-family: 'Quicksand';
+}
+
+.card-body .athlete-image {
+    padding: 30px 0;
+}
+
+.card-body .card-text p{
+    color: var(--card-text-color);
+    font-size: 18px;
+    line-height: 23px;
+    font-family: 'Quicksand';
+}
+/* .card-button {
+    background-color: var(--button-background);
+    padding: 5px 5px;
+    border-radius: 30px;
+    width: 30%;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Quicksand';
+    margin-top: 13%;
+}
+.card-button a {
+    color:var(--button-text-color);   
+} */
+
+.card-button {
+    background-color: var(--button-background);
+    border: none;
+    border-radius: 30px;
+    user-select: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all 0.5s linear;   
+    margin-top: 60px;
+    text-align: center;
+    font-weight: 500;
+    padding: 13px 25px;
+    width: 165px;
+}
+
+.card-button a {
+    color: var(--button-text-color);
+    font-family: 'Quicksand';
+    font-size: 16px;
+}
+
+.card-button:hover {
+    background-color: var(--button-text-color);
+    border-radius: 0;
+    scale: 1.1;
+    border: none;
+}
+
+.card-button a:hover {
+    color: #fff;
+}
+
+.card-button::after{
+    content: '';
+    background: var(--button-text-color);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: -1;   
+    border: none; 
+}
+
+.card-button:hover::after {
+    width: 100%;
+}
+
+.card-leader-board {
+    background-color: #fff;
+    margin: 20px 0;
+    box-shadow: -10px -10px 8px rgba(0, 0, 0, 0.186);
+    padding: 20px 15px;
+}
+
+.card-board-title h2 {
+    color: var(--card-bord-title-color);
+    font-size: 14px;
+    line-height: 23px;
+    font-family: 'Quicksand';
+}
+.card-board-image img {
+    padding-left: 28px;
+}
+
+.card-board-title {
+    padding-left: 12px;
+}
+/* .card-board-row {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+} */
+
+.card-board-row {
+    display: flex;
+    align-items: center;
+
+    .card-board-number,
+    .card-board-position {
+        padding:0 33px;
+    }
+}
+.card-board-position {
+    margin-left: auto;
+}
+
+.card-board-row:not(:last-child) {
+    margin-bottom: 10px;
+}
+.card-leader-board .card-board-row:nth-child(even) {
+    background: var(--row-background-color);
+    padding: 10px 0;
+  }
+  
+
+/* TARINING SCIENCE GYM */
+
+.science-gym {
+    padding-left: 6%;
+    padding-right: 6%;
+    background-color: var(--gym-session-background);
+}
+
+.gym-row {
+    display: grid;
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.gym-card-title h2 {
+    color: var(--heading-color);
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Quicksand';
+    text-transform: uppercase;
+}
+
+.gym-card-text p {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 23px;
+    font-family: 'Quicksand';
+    padding-top: 30px;
+}
+
+/* FOOTER SECTION */
+.footer {
+    position: relative; 
+    background-color: var(--footer-background);
+    height: 100px;
+}
+
+.explore-icon {
+    position: absolute;
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 200px; 
+    overflow: hidden; 
+}
+
+.explore-icon img {
+    max-height: 150px;    
+}
+
+/* HIDE MOBLE CAROUSEL INITIALLY */
+.carousel.mobile {
+    display: none;
+}
+
+/* MOBILE DEVICE */
+ @media only screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        text-align: left;
+        left: 0;
+        right: 0;
+        margin-left: 0;
+        top: 170px;
+        background-color: var(--footer-background);
+        /* box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.186); */
+        padding: 25px 20px;
+        gap: 30px;  
+        z-index: 1;
+        height: 55%;   
+    }
+    .menu a {
+        color: var(--text-color);
+        font-size: 14px; 
+    }
+    
+    .hamburger {
+        display: block;
+        color: var(--text-color);
+        text-align: end;
+    }
+
+    input[type=checkbox]:checked ~ .menu {
+        display: flex;
+    }
+
+    .row {
+        gap: 5px;
+        margin-bottom: 0;
+    }
+
+    .days, .hours, .minutes, .seconds {
+        font-size: 14px ;
+        }
+
+    .timer {
+        padding: 6px 16px;
+    }    
+
+    .row .title {
+            font-size: 14px;
+            }
+            
+    .subtitle {
+            font-size:14px;
+            }
+
+    .search-bar {
+            flex-direction: column;
+    }
+
+    .search-input {
+        max-width: 220px;
+    }
+
+    .semi-colon {
+        padding-top: 0;
+    }
+
+    .text-input {
+        padding-right: 10px;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+        gap: 24px;
+        margin-bottom: 18px;
+    }
+
+    .card-board-number {
+        display: none;
+        }
+    .card-board-image img {
+        display: none;
+        }
+    .card-board-row .card-board-position {
+            padding: 2px;
+            }
+
+    .athlete-row,
+    .gym-row {
+        grid-template-columns: 1fr;
+    }
+    .athlete-row {
+        gap: 43px;
+    }
+
+    .carousel.desktop-tablet {
+        display: none;
+    }
+    .carousel.mobile {
+        display: block;
+    }
+}
+
+/*TABLET VIEW*/
+@media only screen and (min-width: 769px) {
+    .athlete-row,
+    .gym-row {
+        grid-template-columns: 1fr;
+    }
+
+    .athlete-row {
+        gap: 53px;
+        } 
+}
+
+/*DESKTOP AND LARGER SCREENS*/
+
+@media only screen and (min-width: 1024px) {
+    .athlete-row,
+    .gym-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .athlete-row {
+        gap: 100px;
+    }
+
+}
